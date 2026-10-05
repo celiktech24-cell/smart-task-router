@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="790" viewBox="0 0 1600 790" font-family="Inter, 'Segoe UI', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif">
+  <defs>
+    <radialGradient id="glowTop" cx="50%" cy="-12%" r="60%" fx="50%" fy="-12%">
+      <stop offset="0" stop-color="#7c3aed" stop-opacity=".30"/>
+      <stop offset="1" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowBottom" cx="50%" cy="118%" r="55%">
+      <stop offset="0" stop-color="#06b6d4" stop-opacity=".16"/>
+      <stop offset="1" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="title" x1="0" x2="1">
+      <stop offset="0" stop-color="#c4b5fd"/>
+      <stop offset="1" stop-color="#67e8f9"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".06"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity=".02"/>
+    </linearGradient>
+    <linearGradient id="opus" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7c3aed" stop-opacity=".24"/>
+      <stop offset="1" stop-color="#7c3aed" stop-opacity=".06"/>
+    </linearGradient>
+    <linearGradient id="check" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#22c55e" stop-opacity=".15"/>
+      <stop offset="1" stop-color="#22c55e" stop-opacity=".04"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M1,1 L9,5 L1,9" fill="none" stroke="#7b8094" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- background -->
+  <rect width="1600" height="790" rx="28" fill="#06070b"/>
+  <rect width="1600" height="790" rx="28" fill="url(#glowTop)"/>
+  <rect width="1600" height="790" rx="28" fill="url(#glowBottom)"/>
+  <rect x=".5" y=".5" width="1599" height="789" rx="28" fill="none" stroke="#ffffff" stroke-opacity=".08"/>
+
+  <!-- header -->
+  <text x="800" y="92" text-anchor="middle" font-family="'JetBrains Mono', Consolas, Menlo, monospace" font-size="15" letter-spacing="3.3" fill="#9aa0b4">SMART TASK ROUTER · A CLAUDE SKILL</text>
+  <text x="800" y="172" text-anchor="middle" font-size="58" font-weight="600" letter-spacing="-1.6" fill="#f5f6fa">The right Claude model <tspan fill="url(#title)">for each task.</tspan></text>
+  <text x="800" y="218" text-anchor="middle" font-size="21" fill="#8b8fa3">Not the most expensive one for everything.</text>
+
+  <!-- connectors -->
+  <g stroke="#3a3e4d" stroke-width="2" fill="none" marker-end="url(#arrow)">
+    <path d="M316 500 H362"/>
+    <path d="M600 500 C 630 500, 630 380, 660 380"/>
+    <path d="M600 500 H660"/>
+    <path d="M600 500 C 630 500, 630 620, 660 620"/>
+    <path d="M948 380 H990"/>
+    <path d="M948 500 H990"/>
+    <path d="M948 620 H990"/>
+    <path d="M1190 380 C 1222 380, 1222 500, 1250 500"/>
+    <path d="M1190 500 H1250"/>
+    <path d="M1190 620 C 1222 620, 1222 500, 1250 500"/>
+  </g>
+
+  <!-- your task -->
+  <rect x="72.5" y="420.5" width="243" height="159" rx="18" fill="url(#card)" stroke="#ffffff" stroke-opacity=".1"/>
+  <text x="96" y="458" font-family="'JetBrains Mono', Consolas, Menlo, monospace" font-size="13" letter-spacing="2" fill="#8b8fa3">YOUR TASK</text>
+  <text x="96" y="497" font-size="23" font-weight="600" fill="#ffffff">“Build a checkout</text>
+  <text x="96" y="526" font-size="23" font-weight="600" fill="#ffffff">page”</text>
+
+  <!-- step 1 -->
+  <rect x="366.5" y="420.5" width="233" height="159" rx="18" fill="url(#opus)" stroke="#a78bfa" stroke-opacity=".45"/>
+  <text x="390" y="458" font-family="'JetBrains Mono', Consolas, Menlo, monospace" font-size="13" letter-spacing="2" fill="#c4b5fd">STEP 1 · OPUS</text>
+  <text x="390" y="497" font-size="23" font-weight="600" fill="#ffffff">Plans it</text>
+  <text x="390" y="528" font-size="15.5" fill="#9aa0b4">splits it into small, clear</text>
+  <text x="390" y="550" font-size="15.5" fill="#9aa0b4">tasks</text>
+
+  <!-- step 2 -->
+  <text x="664" y="314" font-family="'JetBrains Mono', Consolas, Menlo, monospace" font-size="13" letter-spacing="2" fill="#8b8fa3">STEP 2 · EACH TASK GETS ITS MODEL</text>
+  <g fill="#ffffff" fill-opacity=".04" stroke="#ffffff" stroke-opacity=".09">
+    <rect x="664.5" y="350.5" width="283" height="59" rx="14"/>
+    <rect x="664.5" y="470.5" width="283" height="59" rx="14"/>
+    <rect x="664.5" y="590.5" width="283" height="59" rx="14"/>
+  </g>
+  <g font-size="18" fill="#e7e9ee">
+    <text x="685" y="387">Rename &amp; format files</text>
+    <text x="685" y="507">Build the form</text>
+    <text x="685" y="627">Payment logic</text>
+  </g>
+
+  <rect x="994.5" y="350.5" width="199" height="59" rx="14" fill="#34d399" fill-opacity=".12" stroke="#34d399" stroke-opacity=".45"/>
+  <rect x="994.5" y="470.5" width="199" height="59" rx="14" fill="#60a5fa" fill-opacity=".12" stroke="#60a5fa" stroke-opacity=".45"/>
+  <rect x="994.5" y="590.5" width="199" height="59" rx="14" fill="#a78bfa" fill-opacity=".14" stroke="#a78bfa" stroke-opacity=".5"/>
+  <g font-size="19" font-weight="600" fill="#ffffff">
+    <text x="1015" y="387">Haiku</text>
+    <text x="1015" y="507">Sonnet</text>
+    <text x="1015" y="627">Opus</text>
+  </g>
+  <g font-family="'JetBrains Mono', Consolas, Menlo, monospace" font-size="16" font-weight="500" text-anchor="end">
+    <text x="1174" y="386" fill="#6ee7b7">$</text>
+    <text x="1174" y="506" fill="#93c5fd">$$</text>
+    <text x="1174" y="626" fill="#c4b5fd">$$$</text>
+  </g>
+
+  <!-- step 3 -->
+  <rect x="1254.5" y="410.5" width="273" height="179" rx="18" fill="url(#check)" stroke="#4ade80" stroke-opacity=".4"/>
+  <text x="1278" y="448" font-family="'JetBrains Mono', Consolas, Menlo, monospace" font-size="13" letter-spacing="2" fill="#86efac">STEP 3 · CHECK</text>
+  <text x="1278" y="487" font-size="23" font-weight="600" fill="#ffffff">✓ Tests must pass</text>
+  <text x="1278" y="518" font-size="15.5" fill="#fda4af">✗ Failed? Retry with a</text>
+  <text x="1278" y="540" font-size="15.5" fill="#fda4af">stronger model.</text>
+
+  <!-- footer -->
+  <text x="800" y="732" text-anchor="middle" font-size="19" fill="#c9ccd6">You only pay for the big model <tspan font-weight="600" fill="#ffffff">where it’s really needed.</tspan></text>
+</svg>
