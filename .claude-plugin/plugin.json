@@ -1,0 +1,1 @@
+{"name":"smart-task-router","version":"1.0.0","description":"Strong model plans, cheap models build, real checks decide. Routes every task and subtask to the cheapest Claude model + effort that can succeed, verifies, and escalates only on failure.","author":{"name":"Anas"},"license":"MIT","keywords":["claude-code","skills","subagents","model-routing","token-saving","cost"]}
