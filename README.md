@@ -1,5 +1,7 @@
 # Smart Task Router for Claude
 
+![Smart Task Router: Opus plans, each task gets the right model, every step is checked](assets/how-it-works.svg)
+
 **The strong model thinks, cheap models do the typing, and real checks decide.**
 
 Most work doesn't need the biggest Claude model on max effort. This skill makes Claude pick the cheapest model and effort that can do **each part** of a task. Every part is verified, and Claude moves to a stronger model only when a check fails.
